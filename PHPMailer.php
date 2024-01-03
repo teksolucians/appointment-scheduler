@@ -11,7 +11,9 @@ if (isset($_POST['submit'])){
         //send email section
 
  
-        $business_email = "jennysdoubles@gmail.com";
+        $email_recipient1 = "jennysdoubles@gmail.com";
+        $email_recipient2 = "elwinowen@gmail.com";
+		    $email_recipient3 = "teksolucians@gmail.com";
      
         $mail = new PHPMailer(true);
         try {
@@ -26,9 +28,12 @@ if (isset($_POST['submit'])){
             $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                          // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
-            //Recipients
-            $mail->setFrom("jennysdoubles@gmail.com", "New Appointment Order");
-            $mail->addAddress($business_email);     // Add a recipient
+                //Recipients
+            $mail->setFrom("jennysdoubles@gmail.com", "SetFrom Alias Here");
+            $mail->addAddress($email_recipient1);     // Add a recipient
+		      	$mail->addAddress($email_recipient2);
+			      $mail->addAddress($email_recipient3);
+		      	$mail->addAddress("goanswerowen@gmail.com");  //fourth email recipient here added manually
             
               
             
