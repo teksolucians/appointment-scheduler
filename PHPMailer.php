@@ -13,7 +13,7 @@ if (isset($_POST['submit'])){
  
         $email_recipient1 = "jennysdoubles@gmail.com";
         $email_recipient2 = "elwinowen@gmail.com";
-		    $email_recipient3 = "teksolucians@gmail.com";
+	$email_recipient3 = "teksolucians@gmail.com";
      
         $mail = new PHPMailer(true);
         try {
@@ -31,9 +31,9 @@ if (isset($_POST['submit'])){
                 //Recipients
             $mail->setFrom("jennysdoubles@gmail.com", "SetFrom Alias Here");
             $mail->addAddress($email_recipient1);     // Add a recipient
-		      	$mail->addAddress($email_recipient2);
-			      $mail->addAddress($email_recipient3);
-		      	$mail->addAddress("goanswerowen@gmail.com");  //fourth email recipient here added manually
+	    $mail->addAddress($email_recipient2);
+	    $mail->addAddress($email_recipient3);
+	    $mail->addAddress("goanswerowen@gmail.com");  //fourth email recipient here added manually
             
               
             
