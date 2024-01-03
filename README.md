@@ -1,7 +1,11 @@
 # appointment-scheduler
-Appointment Scheduler with PHPMailer 
+Appointment Scheduler with fully functional PHPMailer 
 
-Download vendor.zip and composer.json and composer.lock.  Place composer.json and composer.lock in same level as the file calling the PHPMailer, and place the vendor folder in the same level of directory as well (see "Example Folder Structure.png").
+Download vendor.zip and composer.json and composer.lock.  
+Place composer.json and composer.lock in same level as the file calling the PHPMailer, and place the vendor folder in the same level of directory as well (see "Example Folder Structure.png").  
+Copy the PHPMailer code and adjust to suit your app as neccessary. 
+
+
 
 
 If the PHP Mailer doesn't work, doublecheck the following:
